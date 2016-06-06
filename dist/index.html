@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>同步推内嵌铃声站</title>
+</head>
+<body>
+    <div id="main"></div>
+    <script id="load-js" load-js="js/bundle.js" hash="d99c20d8ad84324985e157257aecbbdc">
+var scriptStore=null,incognito=!1,load_hash=document.getElementById("load-js").getAttribute("hash"),load_js=document.getElementById("load-js").getAttribute("load-js"),key="ScriptStore";try{scriptStore=localStorage[key]}catch(e){incognito=!0}var scriptStoreObj=void 0!=scriptStore?JSON.parse(scriptStore):null,hash=void 0!=scriptStore?scriptStoreObj.hash:null,script=void 0!=scriptStore?scriptStoreObj.scripts:null;if(void 0==scriptStore||hash!=load_hash||""==script||"dev"==hash){var xmlhttp=new XMLHttpRequest;xmlhttp.onreadystatechange=function(){if(4==xmlhttp.readyState&&200==xmlhttp.status){var t=xmlhttp.responseText;scriptStoreObj={hash:load_hash,scripts:t},0==incognito&&"dev"!=hash&&(localStorage[key]=JSON.stringify(scriptStoreObj))}},xmlhttp.open("GET",load_js+"?hash="+load_hash,!1),xmlhttp.send()}var hm=document.createElement("script");hm.text=scriptStoreObj.scripts;var s=document.getElementsByTagName("head")[0];s.appendChild(hm,s);
+</script>
+</body>
+</html>

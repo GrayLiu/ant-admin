@@ -1,0 +1,46 @@
+@import 'reset.scss';//重置
+@import 'header.scss';//头部tab
+
+
+html {
+	font-size: 36px;
+	font-family: Arial,Helvetica,sans-serif;
+	background-color: #f8f8f8;
+}
+body {
+	font-size: 1rem;
+	color: #525252;
+	font-size-adjust: none;
+}
+a {
+	text-decoration: none;
+}
+
+.main-wrapper{
+	padding-top: 50px;
+}
+.side-wrapper {
+	position: fixed;
+	top: 60px;
+	left: 0;
+	width: 250px;
+	bottom: 0;
+	background: #f2f2f2;
+	padding: 15px 5px;
+	z-index: 2;
+}
+.content-wrapper{
+	min-height: 100%;
+	padding: 15px 20px 0 270px;
+	position: relative;
+	z-index: 1;
+}
+.section-modal {
+	overflow: hidden;
+	.ant-form-item{
+		height:34px;
+	}
+}
+.mod-breadcrumb{
+	margin-bottom: 15px;
+}
