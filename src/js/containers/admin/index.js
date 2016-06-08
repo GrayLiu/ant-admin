@@ -6,6 +6,9 @@ import {connect} from 'react-redux'
 import {Row, Col, Breadcrumb} from 'antd';
 
 import AdminLayout from '../layouts/AdminLayout'
+import ChartTemp from '../components/chartTemp'
+import ChartPie from '../components/chartPie'
+import ChartLine from '../components/chartLine'
 import * as AdminindexAction from '../../actions/admin/index'
 
 class Index extends Component {
@@ -22,7 +25,22 @@ class Index extends Component {
         const {children} = 'aaa'
         return (
             <AdminLayout children={children}>
-                基本信息
+                <div className="mod-breadcrumb">
+                    <Breadcrumb separator=">">
+                        <Breadcrumb.Item>首页</Breadcrumb.Item>
+                        <Breadcrumb.Item>系统概况</Breadcrumb.Item>
+                        <Breadcrumb.Item href="">基本信息</Breadcrumb.Item>
+                    </Breadcrumb>
+                </div>
+                <ChartLine/>
+                <Row>
+                    <Col span="12">
+                        <ChartPie/>
+                    </Col>
+                    <Col span="12">
+                        <ChartTemp/>
+                    </Col>
+                </Row>
             </AdminLayout>
         )
     }
